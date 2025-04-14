@@ -902,7 +902,7 @@ var re = class a {
     encapsulation: 2,
   });
 };
-var Ie = "http://192.168.1.76:3000/observaciones",
+var Ie = "http://servebrayan.duckdns.org:3000/observaciones",
   ae = class a {
     constructor(o) {
       this._http = o;
@@ -1369,7 +1369,7 @@ var se = class a {
     encapsulation: 2,
   });
 };
-var Ge = "http://192.168.1.76:3000/prestamos/crearprestamo",
+var Ge = "http://servebrayan.duckdns.org:3000/prestamos/crearprestamo",
   le = class a {
     constructor(o) {
       this._http = o;
@@ -1379,21 +1379,27 @@ var Ge = "http://192.168.1.76:3000/prestamos/crearprestamo",
       return this._http.post(Ge, o, { headers: t });
     }
     verPrestamos() {
-      return this._http.get("http://192.168.1.76:3000/prestamos");
+      return this._http.get("http://servebrayan.duckdns.org:3000/prestamos");
     }
     getPrestamos(o) {
-      return this._http.get(`http://192.168.1.76:3000/prestamos/todos/${o}`);
+      return this._http.get(
+        `http://servebrayan.duckdns.org:3000/prestamos/todos/${o}`
+      );
     }
     ActualizarPrestamo(o, t) {
       let n = new A({ "Content-Type": "application/json" });
-      return this._http.patch(`http://192.168.1.76:3000/prestamos/${o}`, t, {
-        headers: n,
-      });
+      return this._http.patch(
+        `http://servebrayan.duckdns.org:3000/prestamos/${o}`,
+        t,
+        {
+          headers: n,
+        }
+      );
     }
     AutorizarPrestamo(o, t) {
       let n = new A({ "Content-Type": "application/json" });
       return this._http.patch(
-        `http://192.168.1.76:3000/prestamos/autorizar/${o}`,
+        `http://servebrayan.duckdns.org:3000/prestamos/autorizar/${o}`,
         t,
         { headers: n }
       );

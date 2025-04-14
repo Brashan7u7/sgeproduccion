@@ -49,16 +49,20 @@ var y = class _ {
   constructor(a) {
     this.http = a;
   }
-  apiUrl = "http://192.168.1.76:3000/search/autocomplete";
+  apiUrl = "http://servebrayan.duckdns.org:3000/search/autocomplete";
   search(a) {
     let r = new D().set("query", a).set("limit", "10").set("offset", "0");
     return this.http.get(this.apiUrl, { params: r });
   }
   searchDelegations() {
-    return this.http.get("http://192.168.1.76:3000/search/delegations");
+    return this.http.get(
+      "http://servebrayan.duckdns.org:3000/search/delegations"
+    );
   }
   searchUmfsByDelegation(a) {
-    return this.http.get(`http://192.168.1.76:3000/search/delegation/${a}`);
+    return this.http.get(
+      `http://servebrayan.duckdns.org:3000/search/delegation/${a}`
+    );
   }
   static ɵfac = function (r) {
     return new (r || _)(E(F));

@@ -21,7 +21,7 @@ import {
   wa as a,
   xa as l,
 } from "./chunk-R3GSGODC.js";
-var E = "http://192.168.1.76:3000/movimientos",
+var E = "http://servebrayan.duckdns.org:3000/movimientos",
   s = class t {
     constructor(i) {
       this._http = i;

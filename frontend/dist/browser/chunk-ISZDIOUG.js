@@ -1,5 +1,5 @@
 import { M as o, R as i, _b as n } from "./chunk-R3GSGODC.js";
-var e = "http://192.168.1.76:3000/usuarios",
+var e = "http://servebrayan.duckdns.org:3000/usuarios",
   s = class r {
     constructor(t) {
       this._http = t;

@@ -1,5 +1,5 @@
 import { M as p, R as l, Yb as s, _b as c } from "./chunk-R3GSGODC.js";
-var r = "http://192.168.1.76:3000/expedientes",
+var r = "http://servebrayan.duckdns.org:3000/expedientes",
   b = class a {
     constructor(t) {
       this._http = t;
@@ -17,7 +17,7 @@ var r = "http://192.168.1.76:3000/expedientes",
     }
     getExpedientesnum_seg_social(t) {
       return this._http.get(
-        `http://192.168.1.76:3000/search/num_seg_socialocial/${t}`
+        `http://servebrayan.duckdns.org:3000/search/num_seg_socialocial/${t}`
       );
     }
     createExpediente(t) {

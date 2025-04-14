@@ -26,7 +26,10 @@ var a = class o {
   sessionStatus$ = this.sessionStatusSubject.asObservable();
   login(e, n) {
     return this.http
-      .post("http://192.168.1.76:3000/auth/login", { correo: e, contrasena: n })
+      .post("http://servebrayan.duckdns.org:3000/auth/login", {
+        correo: e,
+        contrasena: n,
+      })
       .pipe(
         i((t) => {
           t &&
